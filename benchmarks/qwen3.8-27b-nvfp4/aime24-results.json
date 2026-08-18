@@ -1,0 +1,242 @@
+[
+  {
+    "id": "2024-II-4",
+    "want": "33",
+    "got": "33",
+    "pass": true,
+    "ctok": 2709,
+    "latency_s": 25.2
+  },
+  {
+    "id": "2024-II-12",
+    "want": "23",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 109.19
+  },
+  {
+    "id": "2024-I-4",
+    "want": "116",
+    "got": "116",
+    "pass": true,
+    "ctok": 1294,
+    "latency_s": 11.59
+  },
+  {
+    "id": "2024-I-3",
+    "want": "809",
+    "got": "809",
+    "pass": true,
+    "ctok": 2382,
+    "latency_s": 23.47
+  },
+  {
+    "id": "2024-I-8",
+    "want": "197",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 115.33
+  },
+  {
+    "id": "2024-I-12",
+    "want": "385",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 111.89
+  },
+  {
+    "id": "2024-I-11",
+    "want": "371",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 119.47
+  },
+  {
+    "id": "2024-II-11",
+    "want": "601",
+    "got": "601",
+    "pass": true,
+    "ctok": 9306,
+    "latency_s": 86.23
+  },
+  {
+    "id": "2024-I-2",
+    "want": "25",
+    "got": "25",
+    "pass": true,
+    "ctok": 2752,
+    "latency_s": 26.96
+  },
+  {
+    "id": "2024-II-6",
+    "want": "55",
+    "got": "55",
+    "pass": true,
+    "ctok": 2297,
+    "latency_s": 21.01
+  },
+  {
+    "id": "2024-I-7",
+    "want": "540",
+    "got": "540",
+    "pass": true,
+    "ctok": 2699,
+    "latency_s": 23.49
+  },
+  {
+    "id": "2024-II-3",
+    "want": "45",
+    "got": "45",
+    "pass": true,
+    "ctok": 3211,
+    "latency_s": 30.64
+  },
+  {
+    "id": "2024-I-1",
+    "want": "204",
+    "got": "204",
+    "pass": true,
+    "ctok": 1280,
+    "latency_s": 10.85
+  },
+  {
+    "id": "2024-II-7",
+    "want": "699",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 109.09
+  },
+  {
+    "id": "2024-I-6",
+    "want": "294",
+    "got": "294",
+    "pass": true,
+    "ctok": 2012,
+    "latency_s": 21.62
+  },
+  {
+    "id": "2024-I-13",
+    "want": "110",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 101.31
+  },
+  {
+    "id": "2024-I-15",
+    "want": "721",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 106.26
+  },
+  {
+    "id": "2024-II-15",
+    "want": "315",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 113.84
+  },
+  {
+    "id": "2024-II-10",
+    "want": "468",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 102.7
+  },
+  {
+    "id": "2024-II-9",
+    "want": "902",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 114.62
+  },
+  {
+    "id": "2024-II-14",
+    "want": "211",
+    "got": "-1",
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 106.99
+  },
+  {
+    "id": "2024-II-5",
+    "want": "80",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 103.5
+  },
+  {
+    "id": "2024-I-9",
+    "want": "480",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 100.06
+  },
+  {
+    "id": "2024-II-2",
+    "want": "236",
+    "got": "236",
+    "pass": true,
+    "ctok": 6482,
+    "latency_s": 67.45
+  },
+  {
+    "id": "2024-II-1",
+    "want": "73",
+    "got": "73",
+    "pass": true,
+    "ctok": 2588,
+    "latency_s": 23.89
+  },
+  {
+    "id": "2024-I-10",
+    "want": "113",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 93.32
+  },
+  {
+    "id": "2024-II-8",
+    "want": "127",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 111.47
+  },
+  {
+    "id": "2024-I-14",
+    "want": "104",
+    "got": "104",
+    "pass": true,
+    "ctok": 8681,
+    "latency_s": 82.27
+  },
+  {
+    "id": "2024-I-5",
+    "want": "104",
+    "got": null,
+    "pass": false,
+    "ctok": 10000,
+    "latency_s": 103.73
+  },
+  {
+    "id": "2024-II-13",
+    "want": "321",
+    "got": "321",
+    "pass": true,
+    "ctok": 4780,
+    "latency_s": 46.37
+  }
+]

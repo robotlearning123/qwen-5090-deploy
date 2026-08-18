@@ -1,0 +1,287 @@
+[
+  {
+    "id": "code_two_sum",
+    "pass": true,
+    "oracle": {
+      "pass": true,
+      "stdout_tail": "ORACLE_PASS\n",
+      "stderr_tail": "",
+      "returncode": 0
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\ndef two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 98,
+      "completion_tokens": 467,
+      "latency_s": 7.26
+    },
+    "code": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []\n"
+  },
+  {
+    "id": "code_lru_cache",
+    "pass": true,
+    "oracle": {
+      "pass": true,
+      "stdout_tail": "ORACLE_PASS\n",
+      "stderr_tail": "",
+      "returncode": 0
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = OrderedDict()\n\n    def get(self, key: int) -> int:\n        if key not in self.cache:\n            return -1\n\n        self.cache.move_to_end(key)\n        return self.cache[key]\n\n    def put(self, key: int, value: int) -> None:\n        if self.capacity <= 0:\n            return\n\n        if key in self.cache:\n            self.cache[key] = value\n            self.cache.move_to_end(key)\n        else:\n            if len(self.cache) >= self.capacity:\n                self.cache.popitem(last=False)\n            self.cache[key] = value\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 106,
+      "completion_tokens": 655,
+      "latency_s": 10.1
+    },
+    "code": "from collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = OrderedDict()\n\n    def get(self, key: int) -> int:\n        if key not in self.cache:\n            return -1\n\n        self.cache.move_to_end(key)\n        return self.cache[key]\n\n    def put(self, key: int, value: int) -> None:\n        if self.capacity <= 0:\n            return\n\n        if key in self.cache:\n            self.cache[key] = value\n            self.cache.move_to_end(key)\n        else:\n            if len(self.cache) >= self.capacity:\n                self.cache.popitem(last=False)\n            self.cache[key] = value\n"
+  },
+  {
+    "id": "code_debug_bisect",
+    "pass": true,
+    "oracle": {
+      "pass": true,
+      "stdout_tail": "ORACLE_PASS\n",
+      "stderr_tail": "",
+      "returncode": 0
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\ndef bsearch(a, x):\n    lo, hi = 0, len(a) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if a[mid] == x:\n            return mid\n        elif a[mid] < x:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 191,
+      "completion_tokens": 521,
+      "latency_s": 8.04
+    },
+    "code": "def bsearch(a, x):\n    lo, hi = 0, len(a) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if a[mid] == x:\n            return mid\n        elif a[mid] < x:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n"
+  },
+  {
+    "id": "code_flatten_json",
+    "pass": false,
+    "oracle": {
+      "pass": false,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/tmp/qwen38-oracle-10h8qakb/test_sol.py\", line 1, in <module>\n    from sol import *\n  File \"/tmp/qwen38-oracle-10h8qakb/sol.py\", line 3\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+      "returncode": 1
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\ndef flatten(d, sep='.'):\n    def _",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "length",
+      "prompt_tokens": 94,
+      "completion_tokens": 6000,
+      "latency_s": 92.61
+    },
+    "code": "\n\n```python\ndef flatten(d, sep='.'):\n    def _"
+  },
+  {
+    "id": "math_boxes",
+    "pass": true,
+    "expected": "53",
+    "got": "53",
+    "resp": {
+      "status": 200,
+      "content": "\n\nTom started with 3 boxes × 12 pencils = 36 pencils.\n\nHe gave away 7 pencils: 36 - 7 = 29.\n\nHe bought 2 more boxes of 12 pencils: 29 + 24 = 53.\n\n53",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 103,
+      "completion_tokens": 136,
+      "latency_s": 2.14
+    }
+  },
+  {
+    "id": "math_discount",
+    "pass": true,
+    "expected": "54",
+    "got": "54",
+    "resp": {
+      "status": 200,
+      "content": "\n\n80 × 0.75 = 60  \n60 × 0.90 = 54  \n\n54",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 100,
+      "completion_tokens": 145,
+      "latency_s": 2.28
+    }
+  },
+  {
+    "id": "math_trains",
+    "pass": true,
+    "expected": "2",
+    "got": "2",
+    "resp": {
+      "status": 200,
+      "content": "\n\nThey approach each other at 70 + 80 = 150 km/h.\n\nTime = 300 / 150 = 2 hours.\n\n2",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 96,
+      "completion_tokens": 163,
+      "latency_s": 2.56
+    }
+  },
+  {
+    "id": "math_arith",
+    "pass": true,
+    "expected": "395",
+    "got": "395",
+    "resp": {
+      "status": 200,
+      "content": "\n\n395",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 77,
+      "completion_tokens": 93,
+      "latency_s": 1.48
+    }
+  },
+  {
+    "id": "math_prime",
+    "pass": true,
+    "expected": "151",
+    "got": "151",
+    "resp": {
+      "status": 200,
+      "content": "\n\n151",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 76,
+      "completion_tokens": 241,
+      "latency_s": 3.76
+    }
+  },
+  {
+    "id": "inst_three_words",
+    "pass": false,
+    "note": "exactly 3 words",
+    "resp": {
+      "status": 200,
+      "content": "Understood.",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 24,
+      "completion_tokens": 4,
+      "latency_s": 0.1
+    }
+  },
+  {
+    "id": "inst_chinese",
+    "pass": true,
+    "note": "contains 巴黎, <=30 chars",
+    "resp": {
+      "status": 200,
+      "content": "巴黎",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 27,
+      "completion_tokens": 2,
+      "latency_s": 0.08
+    }
+  },
+  {
+    "id": "inst_json",
+    "pass": true,
+    "note": "parses as JSON with exact values",
+    "resp": {
+      "status": 200,
+      "content": "{\n  \"a\": 5,\n  \"b\": \"hi\",\n  \"c\": [1, 2, 3]\n}",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 56,
+      "completion_tokens": 34,
+      "latency_s": 0.57
+    }
+  },
+  {
+    "id": "needle_depth10",
+    "pass": true,
+    "prompt_tokens": 15710,
+    "expected": "ZEBRA-4912",
+    "got": "ZEBRA-4912",
+    "resp": {
+      "status": 200,
+      "content": "ZEBRA-4912",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 15710,
+      "completion_tokens": 9,
+      "latency_s": 1.92
+    }
+  },
+  {
+    "id": "needle_depth50",
+    "pass": true,
+    "prompt_tokens": 15710,
+    "expected": "ZEBRA-4912",
+    "got": "ZEBRA-4912",
+    "resp": {
+      "status": 200,
+      "content": "ZEBRA-4912",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 15710,
+      "completion_tokens": 9,
+      "latency_s": 1.92
+    }
+  },
+  {
+    "id": "needle_depth90",
+    "pass": true,
+    "prompt_tokens": 15710,
+    "expected": "ZEBRA-4912",
+    "got": "ZEBRA-4912",
+    "resp": {
+      "status": 200,
+      "content": "ZEBRA-4912",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 15710,
+      "completion_tokens": 9,
+      "latency_s": 1.92
+    }
+  },
+  {
+    "id": "tool_call",
+    "pass": true,
+    "tool_calls": [
+      {
+        "name": "get_weather",
+        "args": "{\"city\": \"Tokyo\"}"
+      }
+    ],
+    "resp": {
+      "status": 200,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "args": "{\"city\": \"Tokyo\"}"
+        }
+      ],
+      "finish_reason": "tool_calls",
+      "prompt_tokens": 283,
+      "completion_tokens": 27,
+      "latency_s": 0.47
+    }
+  }
+]

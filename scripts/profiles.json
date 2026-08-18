@@ -1,0 +1,37 @@
+{
+  "schema": "qwen-5090-deploy/profiles v1",
+  "note": "Machine-readable mirror of profiles.md. Env presets for scripts/serve.sh unless lane says otherwise.",
+  "lanes": [
+    {
+      "name": "bench",
+      "purpose": "baseline + max batch",
+      "env": {},
+      "context": 16384,
+      "measured": {"think_tok_s": 64.4, "aggregate_tok_s_at_4": 225.7, "quality": "14/16"}
+    },
+    {
+      "name": "speed",
+      "purpose": "fastest single-stream (MTP speculative)",
+      "env": {"QWEN38_SPEC_CONFIG": "{\"method\":\"mtp\",\"num_speculative_tokens\":3}"},
+      "context": 16384,
+      "measured": {"think_tok_s": 133.8, "nonthink_tok_s": 99.2, "quality": "14/16 lossless (per-task identical to bench)"},
+      "receipts": ["speed-mtp.json", "quality-mtp.json", "mtp-metrics.txt"]
+    },
+    {
+      "name": "agents",
+      "purpose": "Claude-Code-style agents / long context",
+      "env": {"QWEN38_MAX_MODEL_LEN": "98304"},
+      "context": 98304,
+      "measured": {"think_tok_s": 64, "cc_e2e_task_s": 29, "quality": "cc E2E verified"},
+      "receipts": ["cc-e2e-fib.json"]
+    },
+    {
+      "name": "llama-dspark",
+      "purpose": "DSpark speculative via llama.cpp (only 32GB-fitting DSpark)",
+      "entry": "scripts/serve_llamacpp.sh",
+      "prereq": "GGUFs not auto-downloaded: see docs in that script header",
+      "measured": {"think_tok_s": 90.2, "nonthink_tok_s": 71.8, "quality": "14/16"},
+      "receipts": ["speed-llama-dspark.json", "quality-llama-dspark.json"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+ "gguf_bytes": {
+  "target": 17923394624,
+  "drafter": 1455376576
+ },
+ "acceptance_mean_len": 1.68,
+ "acceptance_note": "from server log 'acceptance = ... mean len' lines, n_max=3 run",
+ "quality_spot": {
+  "two_sum": "PASS",
+  "math_prime": "PASS"
+ },
+ "think_tok_s": 90.2,
+ "nonthink_tok_s": 71.8
+}

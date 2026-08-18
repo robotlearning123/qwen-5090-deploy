@@ -1,0 +1,6 @@
+ds_lmo16 FAILED
+ds_lmo32 FAILED
+# full sweep (from bench_matrix runs 2026-08-17; aggregate tok/s @4-way bench):
+seqs=4  -> 225.7 (speed.json concurrent_4)
+seqs=8  -> 221.7 (matrix run)
+seqs=16 -> 223.0, KV pool 80,749 tokens (matrix run)

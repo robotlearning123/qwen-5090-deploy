@@ -1,0 +1,6 @@
+{"task":"cc -p create+run fib.py (output independently verified = 55)","rungs":[
+ {"config":"full user config, thinking, default permissions","wall_s":206},
+ {"config":"+ --dangerously-skip-permissions","wall_s":92},
+ {"config":"+ minimal cc-profile config dir (160->24 tools)","wall_s":44},
+ {"config":"+ no-think server template","wall_s":32},
+ {"config":"final shipped defaults (clean rerun)","wall_s":29}]}

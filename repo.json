@@ -1,0 +1,20 @@
+{
+  "name": "qwen-5090-deploy",
+  "schema": "qwen-5090-deploy/repo v1",
+  "description": "Qwen-on-RTX-5090 series: serving lanes, executable-oracle benchmarks, dead-end receipts, local Claude-Code integration.",
+  "agent_entry": "AGENTS.md",
+  "agent_summary": "llms.txt",
+  "verify_command": "scripts/verify.sh",
+  "health_command": "scripts/healthcheck.sh [port]",
+  "lanes_manifest": "scripts/profiles.json",
+  "canonical_results": "docs/results.md",
+  "dead_ends": "docs/dead-ends.md",
+  "receipts_root": "benchmarks/",
+  "models": [
+    {"id": "qwen3.8-27b-nvfp4", "role": "primary", "dir": "benchmarks/qwen3.8-27b-nvfp4/"},
+    {"id": "qwen3.6-35b-a3b-moe", "role": "prior-generation MoE", "dir": "benchmarks/qwen3.6-35b-a3b-moe/"},
+    {"id": "qwen3.6-27b", "role": "prior-generation 32GB-wall record", "dir": "benchmarks/qwen3.6-27b/"}
+  ],
+  "hardware_reference": {"gpu": "RTX 5090 32GB", "driver": ">=580", "disk_free": "~25GB checkpoint + venv"},
+  "license": "Apache-2.0"
+}

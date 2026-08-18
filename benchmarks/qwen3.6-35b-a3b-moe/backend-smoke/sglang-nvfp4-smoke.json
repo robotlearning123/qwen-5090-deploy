@@ -1,0 +1,266 @@
+{
+  "backend": "docker",
+  "best": {
+    "completion_tokens": 1024,
+    "errors": [],
+    "finish_reasons": [
+      "length"
+    ],
+    "label": "run_1",
+    "latency_s_max": 14.728421203792095,
+    "latency_s_median": 14.679942836984992,
+    "latency_s_min": 14.67917404603213,
+    "max_completion_tokens": 128,
+    "max_tokens_per_request": 128,
+    "min_completion_tokens": 128,
+    "per_request": [
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 5,
+        "latency_s": 14.679236507043242,
+        "prompt_tokens": 170,
+        "total_tokens": 298
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 0,
+        "latency_s": 14.680394323542714,
+        "prompt_tokens": 179,
+        "total_tokens": 307
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 2,
+        "latency_s": 14.680019531399012,
+        "prompt_tokens": 179,
+        "total_tokens": 307
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 3,
+        "latency_s": 14.679866142570972,
+        "prompt_tokens": 169,
+        "total_tokens": 297
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 4,
+        "latency_s": 14.67973062582314,
+        "prompt_tokens": 178,
+        "total_tokens": 306
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 1,
+        "latency_s": 14.680405840277672,
+        "prompt_tokens": 169,
+        "total_tokens": 297
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 6,
+        "latency_s": 14.67917404603213,
+        "prompt_tokens": 179,
+        "total_tokens": 307
+      },
+      {
+        "completion_tokens": 128,
+        "finish_reason": "length",
+        "i": 7,
+        "latency_s": 14.728421203792095,
+        "prompt_tokens": 171,
+        "total_tokens": 299
+      }
+    ],
+    "prompt_tokens": 1394,
+    "requests": 8,
+    "tok_s": 69.50693951200053,
+    "wall_s": 14.732341938652098
+  },
+  "chunked_prefill_size": 4096,
+  "container_name": "bench-qwen--sglang-onebyone",
+  "context_length": 4096,
+  "dtype": "auto",
+  "endpoint": "/v1/completions",
+  "generated_at_utc": "2026-05-14T00:58:41Z",
+  "hf_cache": "$HF_HOME",
+  "image": "lmsysorg/sglang:latest",
+  "log_output": "<private-artifacts>/35-bench/artifacts/qwen-backend-onebyone-20260514T005447Z/sglang-nvfp4-smoke.log",
+  "max_running_requests": 8,
+  "max_tokens": 128,
+  "mem_fraction_static": 0.86,
+  "model": "RedHatAI/Qwen3.6-35B-A3B-NVFP4",
+  "model_alias": "qwen36-nvfp4-sglang",
+  "model_path": "/root/.cache/huggingface/hub/models--RedHatAI--Qwen3.6-35B-A3B-NVFP4/snapshots/e850c696e6d75f965367e816c16bc7dacd955ffa",
+  "ok": true,
+  "preflight": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--gpus",
+      "all",
+      "--ipc=host",
+      "-v",
+      "$HF_HOME:/root/.cache/huggingface",
+      "lmsysorg/sglang:latest",
+      "python3",
+      "-c",
+      "import json, sglang, sgl_kernel; print(json.dumps({'sglang_version': getattr(sglang, '__version__', None), 'sgl_kernel_version': getattr(sgl_kernel, '__version__', None)}, sort_keys=True))"
+    ],
+    "elapsed_seconds": 13.739160762168467,
+    "finished_at_utc": "2026-05-14T00:58:54Z",
+    "ok": true,
+    "returncode": 0,
+    "started_at_utc": "2026-05-14T00:58:41Z",
+    "stderr": "/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\\.'\n  \"\"\"Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).\n",
+    "stdout": "\n==========\n== CUDA ==\n==========\n\nCUDA Version 13.0.1\n\nContainer image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n\nThis container image and its contents are governed by the NVIDIA Deep Learning Container License.\nBy pulling and using the container, you accept the terms and conditions of this license:\nhttps://developer.nvidia.com/ngc/nvidia-deep-learning-container-license\n\nA copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.\n\n{\"sgl_kernel_version\": \"0.4.2\", \"sglang_version\": \"0.5.11\"}\n"
+  },
+  "prompt_mode": "unique-words",
+  "pull_image": false,
+  "quantization": "compressed-tensors",
+  "ready": true,
+  "requests": 8,
+  "runs": [
+    {
+      "completion_tokens": 1024,
+      "errors": [],
+      "finish_reasons": [
+        "length"
+      ],
+      "label": "run_1",
+      "latency_s_max": 14.728421203792095,
+      "latency_s_median": 14.679942836984992,
+      "latency_s_min": 14.67917404603213,
+      "max_completion_tokens": 128,
+      "max_tokens_per_request": 128,
+      "min_completion_tokens": 128,
+      "per_request": [
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 5,
+          "latency_s": 14.679236507043242,
+          "prompt_tokens": 170,
+          "total_tokens": 298
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 0,
+          "latency_s": 14.680394323542714,
+          "prompt_tokens": 179,
+          "total_tokens": 307
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 2,
+          "latency_s": 14.680019531399012,
+          "prompt_tokens": 179,
+          "total_tokens": 307
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 3,
+          "latency_s": 14.679866142570972,
+          "prompt_tokens": 169,
+          "total_tokens": 297
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 4,
+          "latency_s": 14.67973062582314,
+          "prompt_tokens": 178,
+          "total_tokens": 306
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 1,
+          "latency_s": 14.680405840277672,
+          "prompt_tokens": 169,
+          "total_tokens": 297
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 6,
+          "latency_s": 14.67917404603213,
+          "prompt_tokens": 179,
+          "total_tokens": 307
+        },
+        {
+          "completion_tokens": 128,
+          "finish_reason": "length",
+          "i": 7,
+          "latency_s": 14.728421203792095,
+          "prompt_tokens": 171,
+          "total_tokens": 299
+        }
+      ],
+      "prompt_tokens": 1394,
+      "requests": 8,
+      "tok_s": 69.50693951200053,
+      "wall_s": 14.732341938652098
+    }
+  ],
+  "runtime": "sglang",
+  "runtime_version": null,
+  "server_command": [
+    "docker",
+    "run",
+    "--rm",
+    "--gpus",
+    "all",
+    "--ipc=host",
+    "--network",
+    "host",
+    "--name",
+    "bench-qwen--sglang-onebyone",
+    "-v",
+    "$HF_HOME:/root/.cache/huggingface",
+    "lmsysorg/sglang:latest",
+    "python3",
+    "-m",
+    "sglang.launch_server",
+    "--model-path",
+    "/root/.cache/huggingface/hub/models--RedHatAI--Qwen3.6-35B-A3B-NVFP4/snapshots/e850c696e6d75f965367e816c16bc7dacd955ffa",
+    "--served-model-name",
+    "qwen36-nvfp4-sglang",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "18149",
+    "--context-length",
+    "4096",
+    "--mem-fraction-static",
+    "0.86",
+    "--max-running-requests",
+    "8",
+    "--chunked-prefill-size",
+    "4096",
+    "--dtype",
+    "auto",
+    "--quantization",
+    "compressed-tensors",
+    "--trust-remote-code",
+    "--log-level",
+    "warning",
+    "--log-level-http",
+    "warning"
+  ],
+  "server_pid": 3716447,
+  "status": "ready",
+  "temperature": 0.0,
+  "unique_prompt_words": 128
+}

@@ -1,0 +1,67 @@
+{
+  "ready": true,
+  "runtime": "vllm",
+  "image": "vllm/vllm-openai:v0.19.1",
+  "model": "RedHatAI/Qwen3.6-35B-A3B-NVFP4",
+  "endpoint": "/v1/completions",
+  "label": "8k_p64_mbt8192_nolog_multilen",
+  "max_model_len": 8192,
+  "max_num_seqs": 64,
+  "max_num_batched_tokens": 8192,
+  "kv_cache_dtype": "fp8",
+  "gpu_memory_utilization": 0.94,
+  "prefix_caching": true,
+  "chunked_prefill": true,
+  "logging": "request/access/stats disabled",
+  "runs": [
+    {
+      "max_tokens_per_request": 256,
+      "requests": 64,
+      "wall_s": 10.68598354049027,
+      "completion_tokens": 16384,
+      "tok_s": 1533.2233984751495,
+      "finish_reasons": [
+        "length"
+      ],
+      "min_completion_tokens": 256,
+      "max_completion_tokens": 256,
+      "latency_s_min": 4.4870706824585795,
+      "latency_s_median": 7.5492083160206676,
+      "latency_s_max": 10.682156074792147,
+      "errors": []
+    },
+    {
+      "max_tokens_per_request": 512,
+      "requests": 64,
+      "wall_s": 18.35309366323054,
+      "completion_tokens": 32768,
+      "tok_s": 1785.4210631338394,
+      "finish_reasons": [
+        "length"
+      ],
+      "min_completion_tokens": 512,
+      "max_completion_tokens": 512,
+      "latency_s_min": 6.061188273131847,
+      "latency_s_median": 12.1736347861588,
+      "latency_s_max": 18.342903278768063,
+      "errors": []
+    },
+    {
+      "max_tokens_per_request": 1024,
+      "requests": 64,
+      "wall_s": 36.89730432070792,
+      "completion_tokens": 65536,
+      "tok_s": 1776.1731163438722,
+      "finish_reasons": [
+        "length"
+      ],
+      "min_completion_tokens": 1024,
+      "max_completion_tokens": 1024,
+      "latency_s_min": 12.162067751400173,
+      "latency_s_median": 24.419272303115577,
+      "latency_s_max": 36.88747776672244,
+      "errors": []
+    }
+  ],
+  "best_tok_s": 1785.4210631338394
+}

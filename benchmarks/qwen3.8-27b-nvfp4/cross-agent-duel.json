@@ -1,0 +1,119 @@
+[
+ {
+  "arm": "glm-5.3",
+  "task": "code_two_sum",
+  "pass": true,
+  "latency_s": 16.4,
+  "stderr": ""
+ },
+ {
+  "arm": "glm-5.3",
+  "task": "code_lru_cache",
+  "pass": true,
+  "latency_s": 23.4,
+  "stderr": ""
+ },
+ {
+  "arm": "glm-5.3",
+  "task": "code_debug_bisect",
+  "pass": true,
+  "latency_s": 39.2,
+  "stderr": ""
+ },
+ {
+  "arm": "glm-5.3",
+  "task": "code_flatten_json",
+  "pass": true,
+  "latency_s": 14.5,
+  "stderr": ""
+ },
+ {
+  "arm": "glm-5.3",
+  "task": "fib_agentic",
+  "pass": true,
+  "file_ok": true,
+  "ran_ok": true,
+  "latency_s": 43.4
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "code_two_sum",
+  "pass": true,
+  "latency_s": 6.8,
+  "stderr": ""
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "code_lru_cache",
+  "pass": true,
+  "latency_s": 11.2,
+  "stderr": ""
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "code_debug_bisect",
+  "pass": true,
+  "latency_s": 15.1,
+  "stderr": ""
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "code_flatten_json",
+  "pass": true,
+  "latency_s": 9.7,
+  "stderr": ""
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "fib_agentic",
+  "pass": true,
+  "file_ok": true,
+  "ran_ok": true,
+  "latency_s": 31.6
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "vision_shapes",
+  "pass": true,
+  "answer": "3, 42",
+  "note": "file-tool round trip"
+ },
+ {
+  "arm": "grok-4.5",
+  "task": "vision_chart",
+  "pass": true,
+  "answer": "C 210",
+  "note": "file-tool round trip"
+ },
+ {
+  "arm": "qwen3.8-local",
+  "task": "code_two_sum",
+  "pass": true,
+  "source": "quality2.json"
+ },
+ {
+  "arm": "qwen3.8-local",
+  "task": "code_lru_cache",
+  "pass": true,
+  "source": "quality2.json"
+ },
+ {
+  "arm": "qwen3.8-local",
+  "task": "code_debug_bisect",
+  "pass": true,
+  "source": "quality2.json"
+ },
+ {
+  "arm": "qwen3.8-local",
+  "task": "code_flatten_json",
+  "pass": false,
+  "source": "quality2.json"
+ },
+ {
+  "arm": "qwen3.8-local",
+  "task": "fib_agentic",
+  "pass": true,
+  "latency_s": 206,
+  "source": "cc-e2e-fib.json rung 1"
+ }
+]

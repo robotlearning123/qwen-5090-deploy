@@ -1,0 +1,24 @@
+# qwen-5090-deploy
+
+> Qwen-on-RTX-5090 series: best use of every local Qwen on one 32 GB card.
+> Every number reproducible; every dead end documented.
+
+## For AI agents
+- READ FIRST: AGENTS.md (repo map, command contracts, verify gate, change rules)
+- Machine manifests: repo.json (this repo), scripts/profiles.json (serving lanes)
+- After ANY change run: scripts/verify.sh  (exit 0 = safe to commit)
+- Deployment sanity: scripts/healthcheck.sh [port]
+- Do NOT eyeball-grade benchmarks; executable oracles only (scripts/bench_quality.py)
+- Claims in docs must link a receipt under benchmarks/
+
+## For humans
+- Start: README.md (prerequisites, 4-command quickstart, troubleshooting)
+- Numbers: docs/results.md · What fails and why: docs/dead-ends.md
+- Run Claude Code against the local model: docs/cc-integration.md
+
+## Key facts
+- Qwen3.8-27B NVFP4 on RTX 5090 32GB: 64 -> 134 tok/s thinking decode (MTP, lossless);
+  HumanEval 83.5%; agent-task 206 s -> 29 s
+- Aggregate ceiling ~225 tok/s (compute-bound; more sequences do not help)
+- DSpark fits 32GB ONLY via llama.cpp lane (90.2 tok/s think); vLLM dspark = 8-config OOM matrix
+- License: Apache-2.0. All receipts are the authors' own measurements.

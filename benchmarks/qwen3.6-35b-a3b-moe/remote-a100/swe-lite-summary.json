@@ -1,0 +1,8 @@
+{
+ "n": 300,
+ "produced_patch": 260,
+ "format_compliance_pct": 86.7,
+ "mean_elapsed_s": 73.6,
+ "aggregate_tok_s": 74.5,
+ "note": "SWE-bench Lite n=300 on the A100 lane; 'produced_patch' = raw_output parsed to a valid patch (the kit's original 'format compliance' metric)"
+}

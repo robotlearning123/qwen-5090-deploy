@@ -1,0 +1,21 @@
+[
+  {
+    "test": "shapes",
+    "pass": true,
+    "expected": "3, 42",
+    "numbers_in_answer": [
+      "3",
+      "42"
+    ],
+    "answer_head": "3, 42"
+  },
+  {
+    "test": "chart",
+    "pass": true,
+    "expected": "C 210",
+    "numbers_in_answer": [
+      "210"
+    ],
+    "answer_head": "C 210"
+  }
+]

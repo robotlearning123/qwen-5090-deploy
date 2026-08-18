@@ -1,0 +1,822 @@
+[
+ {
+  "task_id": "HumanEval/0",
+  "pass": true,
+  "ctok": 560
+ },
+ {
+  "task_id": "HumanEval/1",
+  "pass": false,
+  "ctok": 1452
+ },
+ {
+  "task_id": "HumanEval/2",
+  "pass": true,
+  "ctok": 650
+ },
+ {
+  "task_id": "HumanEval/3",
+  "pass": true,
+  "ctok": 574
+ },
+ {
+  "task_id": "HumanEval/4",
+  "pass": false,
+  "ctok": 672
+ },
+ {
+  "task_id": "HumanEval/5",
+  "pass": false,
+  "ctok": 1271
+ },
+ {
+  "task_id": "HumanEval/6",
+  "pass": false,
+  "ctok": 1218
+ },
+ {
+  "task_id": "HumanEval/7",
+  "pass": false,
+  "ctok": 482
+ },
+ {
+  "task_id": "HumanEval/8",
+  "pass": true,
+  "ctok": 609
+ },
+ {
+  "task_id": "HumanEval/9",
+  "pass": false,
+  "ctok": 432
+ },
+ {
+  "task_id": "HumanEval/10",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/11",
+  "pass": true,
+  "ctok": 704
+ },
+ {
+  "task_id": "HumanEval/12",
+  "pass": false,
+  "ctok": 517
+ },
+ {
+  "task_id": "HumanEval/13",
+  "pass": true,
+  "ctok": 320
+ },
+ {
+  "task_id": "HumanEval/14",
+  "pass": true,
+  "ctok": 256
+ },
+ {
+  "task_id": "HumanEval/15",
+  "pass": true,
+  "ctok": 308
+ },
+ {
+  "task_id": "HumanEval/16",
+  "pass": true,
+  "ctok": 197
+ },
+ {
+  "task_id": "HumanEval/17",
+  "pass": true,
+  "ctok": 840
+ },
+ {
+  "task_id": "HumanEval/18",
+  "pass": true,
+  "ctok": 454
+ },
+ {
+  "task_id": "HumanEval/19",
+  "pass": true,
+  "ctok": 567
+ },
+ {
+  "task_id": "HumanEval/20",
+  "pass": false,
+  "ctok": 1115
+ },
+ {
+  "task_id": "HumanEval/21",
+  "pass": true,
+  "ctok": 988
+ },
+ {
+  "task_id": "HumanEval/22",
+  "pass": false,
+  "ctok": 1503
+ },
+ {
+  "task_id": "HumanEval/23",
+  "pass": true,
+  "ctok": 171
+ },
+ {
+  "task_id": "HumanEval/24",
+  "pass": true,
+  "ctok": 1883
+ },
+ {
+  "task_id": "HumanEval/25",
+  "pass": false,
+  "ctok": 2063
+ },
+ {
+  "task_id": "HumanEval/26",
+  "pass": true,
+  "ctok": 803
+ },
+ {
+  "task_id": "HumanEval/27",
+  "pass": true,
+  "ctok": 154
+ },
+ {
+  "task_id": "HumanEval/28",
+  "pass": false,
+  "ctok": 1191
+ },
+ {
+  "task_id": "HumanEval/29",
+  "pass": false,
+  "ctok": 624
+ },
+ {
+  "task_id": "HumanEval/30",
+  "pass": true,
+  "ctok": 448
+ },
+ {
+  "task_id": "HumanEval/31",
+  "pass": true,
+  "ctok": 995
+ },
+ {
+  "task_id": "HumanEval/32",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/33",
+  "pass": true,
+  "ctok": 549
+ },
+ {
+  "task_id": "HumanEval/34",
+  "pass": true,
+  "ctok": 180
+ },
+ {
+  "task_id": "HumanEval/35",
+  "pass": true,
+  "ctok": 186
+ },
+ {
+  "task_id": "HumanEval/36",
+  "pass": true,
+  "ctok": 960
+ },
+ {
+  "task_id": "HumanEval/37",
+  "pass": true,
+  "ctok": 413
+ },
+ {
+  "task_id": "HumanEval/38",
+  "pass": false,
+  "ctok": 450
+ },
+ {
+  "task_id": "HumanEval/39",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/40",
+  "pass": true,
+  "ctok": 1440
+ },
+ {
+  "task_id": "HumanEval/41",
+  "pass": true,
+  "ctok": 435
+ },
+ {
+  "task_id": "HumanEval/42",
+  "pass": true,
+  "ctok": 260
+ },
+ {
+  "task_id": "HumanEval/43",
+  "pass": true,
+  "ctok": 392
+ },
+ {
+  "task_id": "HumanEval/44",
+  "pass": true,
+  "ctok": 1811
+ },
+ {
+  "task_id": "HumanEval/45",
+  "pass": true,
+  "ctok": 181
+ },
+ {
+  "task_id": "HumanEval/46",
+  "pass": true,
+  "ctok": 1328
+ },
+ {
+  "task_id": "HumanEval/47",
+  "pass": false,
+  "ctok": 5038
+ },
+ {
+  "task_id": "HumanEval/48",
+  "pass": true,
+  "ctok": 196
+ },
+ {
+  "task_id": "HumanEval/49",
+  "pass": true,
+  "ctok": 398
+ },
+ {
+  "task_id": "HumanEval/50",
+  "pass": false,
+  "ctok": 428
+ },
+ {
+  "task_id": "HumanEval/51",
+  "pass": true,
+  "ctok": 308
+ },
+ {
+  "task_id": "HumanEval/52",
+  "pass": true,
+  "ctok": 240
+ },
+ {
+  "task_id": "HumanEval/53",
+  "pass": true,
+  "ctok": 247
+ },
+ {
+  "task_id": "HumanEval/54",
+  "pass": true,
+  "ctok": 456
+ },
+ {
+  "task_id": "HumanEval/55",
+  "pass": true,
+  "ctok": 419
+ },
+ {
+  "task_id": "HumanEval/56",
+  "pass": true,
+  "ctok": 458
+ },
+ {
+  "task_id": "HumanEval/57",
+  "pass": true,
+  "ctok": 642
+ },
+ {
+  "task_id": "HumanEval/58",
+  "pass": true,
+  "ctok": 451
+ },
+ {
+  "task_id": "HumanEval/59",
+  "pass": true,
+  "ctok": 2331
+ },
+ {
+  "task_id": "HumanEval/60",
+  "pass": true,
+  "ctok": 706
+ },
+ {
+  "task_id": "HumanEval/61",
+  "pass": true,
+  "ctok": 379
+ },
+ {
+  "task_id": "HumanEval/62",
+  "pass": true,
+  "ctok": 289
+ },
+ {
+  "task_id": "HumanEval/63",
+  "pass": true,
+  "ctok": 3642
+ },
+ {
+  "task_id": "HumanEval/64",
+  "pass": true,
+  "ctok": 553
+ },
+ {
+  "task_id": "HumanEval/65",
+  "pass": true,
+  "ctok": 1239
+ },
+ {
+  "task_id": "HumanEval/66",
+  "pass": true,
+  "ctok": 297
+ },
+ {
+  "task_id": "HumanEval/67",
+  "pass": true,
+  "ctok": 851
+ },
+ {
+  "task_id": "HumanEval/68",
+  "pass": true,
+  "ctok": 645
+ },
+ {
+  "task_id": "HumanEval/69",
+  "pass": true,
+  "ctok": 689
+ },
+ {
+  "task_id": "HumanEval/70",
+  "pass": true,
+  "ctok": 774
+ },
+ {
+  "task_id": "HumanEval/71",
+  "pass": true,
+  "ctok": 981
+ },
+ {
+  "task_id": "HumanEval/72",
+  "pass": true,
+  "ctok": 464
+ },
+ {
+  "task_id": "HumanEval/73",
+  "pass": true,
+  "ctok": 526
+ },
+ {
+  "task_id": "HumanEval/74",
+  "pass": true,
+  "ctok": 444
+ },
+ {
+  "task_id": "HumanEval/75",
+  "pass": true,
+  "ctok": 3897
+ },
+ {
+  "task_id": "HumanEval/76",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/77",
+  "pass": true,
+  "ctok": 1097
+ },
+ {
+  "task_id": "HumanEval/78",
+  "pass": true,
+  "ctok": 582
+ },
+ {
+  "task_id": "HumanEval/79",
+  "pass": true,
+  "ctok": 472
+ },
+ {
+  "task_id": "HumanEval/80",
+  "pass": true,
+  "ctok": 520
+ },
+ {
+  "task_id": "HumanEval/81",
+  "pass": true,
+  "ctok": 1242
+ },
+ {
+  "task_id": "HumanEval/82",
+  "pass": true,
+  "ctok": 447
+ },
+ {
+  "task_id": "HumanEval/83",
+  "pass": true,
+  "ctok": 1172
+ },
+ {
+  "task_id": "HumanEval/84",
+  "pass": true,
+  "ctok": 405
+ },
+ {
+  "task_id": "HumanEval/85",
+  "pass": true,
+  "ctok": 283
+ },
+ {
+  "task_id": "HumanEval/86",
+  "pass": true,
+  "ctok": 929
+ },
+ {
+  "task_id": "HumanEval/87",
+  "pass": true,
+  "ctok": 693
+ },
+ {
+  "task_id": "HumanEval/88",
+  "pass": true,
+  "ctok": 544
+ },
+ {
+  "task_id": "HumanEval/89",
+  "pass": true,
+  "ctok": 776
+ },
+ {
+  "task_id": "HumanEval/90",
+  "pass": true,
+  "ctok": 381
+ },
+ {
+  "task_id": "HumanEval/91",
+  "pass": true,
+  "ctok": 1605
+ },
+ {
+  "task_id": "HumanEval/92",
+  "pass": true,
+  "ctok": 1671
+ },
+ {
+  "task_id": "HumanEval/93",
+  "pass": true,
+  "ctok": 1958
+ },
+ {
+  "task_id": "HumanEval/94",
+  "pass": true,
+  "ctok": 2533
+ },
+ {
+  "task_id": "HumanEval/95",
+  "pass": true,
+  "ctok": 884
+ },
+ {
+  "task_id": "HumanEval/96",
+  "pass": true,
+  "ctok": 1225
+ },
+ {
+  "task_id": "HumanEval/97",
+  "pass": true,
+  "ctok": 435
+ },
+ {
+  "task_id": "HumanEval/98",
+  "pass": true,
+  "ctok": 393
+ },
+ {
+  "task_id": "HumanEval/99",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/100",
+  "pass": true,
+  "ctok": 395
+ },
+ {
+  "task_id": "HumanEval/101",
+  "pass": true,
+  "ctok": 678
+ },
+ {
+  "task_id": "HumanEval/102",
+  "pass": true,
+  "ctok": 2331
+ },
+ {
+  "task_id": "HumanEval/103",
+  "pass": true,
+  "ctok": 2058
+ },
+ {
+  "task_id": "HumanEval/104",
+  "pass": true,
+  "ctok": 741
+ },
+ {
+  "task_id": "HumanEval/105",
+  "pass": true,
+  "ctok": 755
+ },
+ {
+  "task_id": "HumanEval/106",
+  "pass": true,
+  "ctok": 777
+ },
+ {
+  "task_id": "HumanEval/107",
+  "pass": true,
+  "ctok": 666
+ },
+ {
+  "task_id": "HumanEval/108",
+  "pass": true,
+  "ctok": 839
+ },
+ {
+  "task_id": "HumanEval/109",
+  "pass": true,
+  "ctok": 873
+ },
+ {
+  "task_id": "HumanEval/110",
+  "pass": true,
+  "ctok": 738
+ },
+ {
+  "task_id": "HumanEval/111",
+  "pass": true,
+  "ctok": 588
+ },
+ {
+  "task_id": "HumanEval/112",
+  "pass": true,
+  "ctok": 344
+ },
+ {
+  "task_id": "HumanEval/113",
+  "pass": true,
+  "ctok": 757
+ },
+ {
+  "task_id": "HumanEval/114",
+  "pass": true,
+  "ctok": 572
+ },
+ {
+  "task_id": "HumanEval/115",
+  "pass": true,
+  "ctok": 720
+ },
+ {
+  "task_id": "HumanEval/116",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/117",
+  "pass": true,
+  "ctok": 790
+ },
+ {
+  "task_id": "HumanEval/118",
+  "pass": true,
+  "ctok": 752
+ },
+ {
+  "task_id": "HumanEval/119",
+  "pass": true,
+  "ctok": 900
+ },
+ {
+  "task_id": "HumanEval/120",
+  "pass": true,
+  "ctok": 590
+ },
+ {
+  "task_id": "HumanEval/121",
+  "pass": true,
+  "ctok": 520
+ },
+ {
+  "task_id": "HumanEval/122",
+  "pass": true,
+  "ctok": 488
+ },
+ {
+  "task_id": "HumanEval/123",
+  "pass": true,
+  "ctok": 1193
+ },
+ {
+  "task_id": "HumanEval/124",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/125",
+  "pass": true,
+  "ctok": 2920
+ },
+ {
+  "task_id": "HumanEval/126",
+  "pass": true,
+  "ctok": 936
+ },
+ {
+  "task_id": "HumanEval/127",
+  "pass": true,
+  "ctok": 1264
+ },
+ {
+  "task_id": "HumanEval/128",
+  "pass": true,
+  "ctok": 957
+ },
+ {
+  "task_id": "HumanEval/129",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/130",
+  "pass": true,
+  "ctok": 2228
+ },
+ {
+  "task_id": "HumanEval/131",
+  "pass": true,
+  "ctok": 271
+ },
+ {
+  "task_id": "HumanEval/132",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/133",
+  "pass": true,
+  "ctok": 834
+ },
+ {
+  "task_id": "HumanEval/134",
+  "pass": true,
+  "ctok": 2218
+ },
+ {
+  "task_id": "HumanEval/135",
+  "pass": true,
+  "ctok": 398
+ },
+ {
+  "task_id": "HumanEval/136",
+  "pass": true,
+  "ctok": 451
+ },
+ {
+  "task_id": "HumanEval/137",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/138",
+  "pass": true,
+  "ctok": 247
+ },
+ {
+  "task_id": "HumanEval/139",
+  "pass": true,
+  "ctok": 407
+ },
+ {
+  "task_id": "HumanEval/140",
+  "pass": true,
+  "ctok": 1433
+ },
+ {
+  "task_id": "HumanEval/141",
+  "pass": true,
+  "ctok": 1155
+ },
+ {
+  "task_id": "HumanEval/142",
+  "pass": true,
+  "ctok": 916
+ },
+ {
+  "task_id": "HumanEval/143",
+  "pass": true,
+  "ctok": 620
+ },
+ {
+  "task_id": "HumanEval/144",
+  "pass": true,
+  "ctok": 527
+ },
+ {
+  "task_id": "HumanEval/145",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/146",
+  "pass": true,
+  "ctok": 1503
+ },
+ {
+  "task_id": "HumanEval/147",
+  "pass": true,
+  "ctok": 2066
+ },
+ {
+  "task_id": "HumanEval/148",
+  "pass": true,
+  "ctok": 558
+ },
+ {
+  "task_id": "HumanEval/149",
+  "pass": true,
+  "ctok": 822
+ },
+ {
+  "task_id": "HumanEval/150",
+  "pass": true,
+  "ctok": 456
+ },
+ {
+  "task_id": "HumanEval/151",
+  "pass": true,
+  "ctok": 1907
+ },
+ {
+  "task_id": "HumanEval/152",
+  "pass": true,
+  "ctok": 383
+ },
+ {
+  "task_id": "HumanEval/153",
+  "pass": true,
+  "ctok": 843
+ },
+ {
+  "task_id": "HumanEval/154",
+  "pass": true,
+  "ctok": 1025
+ },
+ {
+  "task_id": "HumanEval/155",
+  "pass": true,
+  "ctok": 367
+ },
+ {
+  "task_id": "HumanEval/156",
+  "pass": true,
+  "ctok": 570
+ },
+ {
+  "task_id": "HumanEval/157",
+  "pass": true,
+  "ctok": 5320
+ },
+ {
+  "task_id": "HumanEval/158",
+  "pass": true,
+  "ctok": 706
+ },
+ {
+  "task_id": "HumanEval/159",
+  "pass": true,
+  "ctok": 299
+ },
+ {
+  "task_id": "HumanEval/160",
+  "pass": false,
+  "ctok": 6000
+ },
+ {
+  "task_id": "HumanEval/161",
+  "pass": true,
+  "ctok": 488
+ },
+ {
+  "task_id": "HumanEval/162",
+  "pass": true,
+  "ctok": 244
+ },
+ {
+  "task_id": "HumanEval/163",
+  "pass": true,
+  "ctok": 1675
+ }
+]

@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-05-14T01:03:10.019Z",
+  "artifact_dir": "<private-artifacts>/35-bench/artifacts/qwen-backend-onebyone-20260514T005447Z",
+  "rows": [
+    {
+      "runtime": "cc-wrapper-ollama",
+      "status": "pass",
+      "tok_s": null,
+      "note": "Claude Code wrapper exact-output smoke; local Ollama qwen3.6:latest Q4_K_M"
+    },
+    {
+      "runtime": "llama.cpp-patched",
+      "status": "pass",
+      "tok_s": 502.7000490918017,
+      "note": "OpenAI-compatible llama-server, Ollama GGUF blob, 8x128 smoke"
+    },
+    {
+      "runtime": "vLLM-NVFP4",
+      "status": "pass",
+      "tok_s": 460.44282051722416,
+      "note": "vllm/vllm-openai:v0.20.2, RedHatAI Qwen3.6-35B-A3B-NVFP4, 8x128 smoke"
+    },
+    {
+      "runtime": "SGLang-NVFP4",
+      "status": "pass",
+      "tok_s": 69.50693951200053,
+      "note": "lmsysorg/sglang:latest, same NVFP4 model, 8x128 smoke"
+    },
+    {
+      "runtime": "TensorRT-LLM",
+      "status": "image_missing",
+      "tok_s": null,
+      "note": "Docker image not present locally: nvcr.io/nvidia/tensorrt-llm/release:latest. Re-run with --pull-image to allow pulling it."
+    },
+    {
+      "runtime": "Unsloth-MTP-GGUF",
+      "status": "preflight_blocked",
+      "tok_s": null,
+      "note": "MTP llama.cpp build is missing at /tmp/llama.cpp-mtp/build/bin/llama-bench; Unsloth MTP GGUF is not downloaded under $HF_HOME/unsloth-mtp; Unsloth non-MTP baseline GGUF is not downloaded under $HF_HOME/unsloth-base; repo script expects huggingface-cli, but this host has hf; script needs env/wrapper adjustment before download"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Lane serving facts (log-backed; raw serve logs retained privately)
+lane                    KV pool (tok)  VRAM idle-serving   cold start (JIT warm)
+bench 16k graphs        126,390        28.1 GiB            ~140 s
+agents 96k eager        126,390        30.3 GiB            ~25 s (eager skips graphs)
+speed 16k graphs +MTP    46,302        (MTP draft KV)      ~140 s + spec warmup
+llama Q4+DSpark (GGUF)  n/a (llama.cpp) 19.4 GiB weights   ~15 s

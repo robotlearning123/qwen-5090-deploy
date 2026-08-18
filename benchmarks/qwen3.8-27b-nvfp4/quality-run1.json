@@ -1,0 +1,285 @@
+[
+  {
+    "id": "code_two_sum",
+    "pass": true,
+    "oracle": {
+      "pass": true,
+      "stdout_tail": "ORACLE_PASS\n",
+      "stderr_tail": "",
+      "returncode": 0
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\ndef two_sum(nums, target):\n    seen = {}\n    for i, x in enumerate(nums):\n        complement = target - x\n        if complement in seen:\n            return [seen[complement], i]\n        seen[x] = i\n    return []\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 98,
+      "completion_tokens": 336,
+      "latency_s": 5.23
+    },
+    "code": "def two_sum(nums, target):\n    seen = {}\n    for i, x in enumerate(nums):\n        complement = target - x\n        if complement in seen:\n            return [seen[complement], i]\n        seen[x] = i\n    return []\n"
+  },
+  {
+    "id": "code_lru_cache",
+    "pass": false,
+    "oracle": {
+      "pass": false,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/tmp/qwen38-oracle-pa5jsu92/test_sol.py\", line 2, in <module>\n    c = LRUCache(2)\n  File \"/tmp/qwen38-oracle-pa5jsu92/sol.py\", line 14, in __init__\n    self.head = Node(None, None)\n                ^^^^\nNameError: name 'Node' is not defined. Did you mean: 'self.Node'?\n",
+      "returncode": 1
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\nclass LRUCache:\n    class Node:\n        __slots__ = (\"key\", \"value\", \"prev\", \"next\")\n\n        def __init__(self, key, value):\n            self.key = key\n            self.value = value\n            self.prev = None\n            self.next = None\n\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = {}\n        self.head = Node(None, None)\n        self.tail = Node(None, None)\n        self.head.next = self.tail\n        self.tail.prev = self.head\n        self.size = 0\n\n    def _remove(self, node):\n        node.prev.next = node.next\n        node.next.prev = node.prev\n\n    def _add_front(self, node):\n        node.prev = self.head\n        node.next = self.head.next\n        self.head.next.prev = node\n        self.head.next = node\n\n    def get(self, key):\n        if key not in self.cache:\n            return -1\n\n        node = self.cache[key]\n        self._remove(node)\n        self._add_front(node)\n        return node.value\n\n    def put(self, key, value):\n        if self.capacity <= 0:\n            return\n\n        if key in self.cache:\n            node = self.cache[key]\n            node.value = value\n            self._remove(node)\n            self._add_front(node)\n            return\n\n        if self.size == self.capacity:\n            lru_node = self.tail.prev\n            self._remove(lru_node)\n            del self.cache[lru_node.key]\n            self.size -= 1\n\n        node = Node(key, value)\n        self.cache[key] = node\n        self._add_front(node)\n        self.size += 1\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 106,
+      "completion_tokens": 1617,
+      "latency_s": 24.82
+    },
+    "code": "class LRUCache:\n    class Node:\n        __slots__ = (\"key\", \"value\", \"prev\", \"next\")\n\n        def __init__(self, key, value):\n            self.key = key\n            self.value = value\n            self.prev = None\n            self.next = None\n\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = {}\n        self.head = Node(None, None)\n        self.tail = Node(None, None)\n        self.head.next = self.tail\n        self.tail.prev = self.head\n        self.size = 0\n\n    def _remove(self, node):\n        node.prev.next = node.next\n        node.next.prev = node.prev\n\n    def _add_front(self, node):\n        node.prev = self.head\n        node.next = self.head.next\n        self.head.next.prev = node\n        self.head.next = node\n\n    def get(self, key):\n        if key not in self.cache:\n            return -1\n\n        node = self.cache[key]\n        self._remove(node)\n        self._add_front(node)\n        return node.value\n\n    def put(self, key, value):\n        if self.capacity <= 0:\n            return\n\n        if key in self.cache:\n            node = self.cache[key]\n            node.value = value\n            self._remove(node)\n            self._add_front(node)\n            return\n\n        if self.size == self.capacity:\n            lru_node = self.tail.prev\n            self._remove(lru_node)\n            del self.cache[lru_node.key]\n            self.size -= 1\n\n        node = Node(key, value)\n        self.cache[key] = node\n        self._add_front(node)\n        self.size += 1\n"
+  },
+  {
+    "id": "code_debug_bisect",
+    "pass": true,
+    "oracle": {
+      "pass": true,
+      "stdout_tail": "ORACLE_PASS\n",
+      "stderr_tail": "",
+      "returncode": 0
+    },
+    "resp": {
+      "status": 200,
+      "content": "\n\n```python\ndef bsearch(a, x):\n    lo, hi = 0, len(a) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if a[mid] == x:\n            return mid\n        elif a[mid] < x:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n```",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 191,
+      "completion_tokens": 778,
+      "latency_s": 11.93
+    },
+    "code": "def bsearch(a, x):\n    lo, hi = 0, len(a) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if a[mid] == x:\n            return mid\n        elif a[mid] < x:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n"
+  },
+  {
+    "id": "code_flatten_json",
+    "pass": false,
+    "oracle": {
+      "pass": false,
+      "stderr_tail": "no code block extracted"
+    },
+    "resp": {
+      "status": 200,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "length",
+      "prompt_tokens": 94,
+      "completion_tokens": 2500,
+      "latency_s": 38.42
+    },
+    "code": null
+  },
+  {
+    "id": "math_boxes",
+    "pass": false,
+    "expected": "29",
+    "got": "53",
+    "resp": {
+      "status": 200,
+      "content": "\n\nTom starts with 3 × 12 = 36 pencils.\nHe gives away 7, leaving 36 − 7 = 29.\nHe buys 2 more boxes, adding 2 × 12 = 24.\nSo he now has 29 + 24 = 53 pencils.\n\n53",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 103,
+      "completion_tokens": 140,
+      "latency_s": 2.18
+    }
+  },
+  {
+    "id": "math_discount",
+    "pass": true,
+    "expected": "54",
+    "got": "54",
+    "resp": {
+      "status": 200,
+      "content": "\n\n54",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 100,
+      "completion_tokens": 108,
+      "latency_s": 1.7
+    }
+  },
+  {
+    "id": "math_trains",
+    "pass": true,
+    "expected": "2",
+    "got": "2",
+    "resp": {
+      "status": 200,
+      "content": "\n\nThey meet after 2 hours.\n2",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 96,
+      "completion_tokens": 98,
+      "latency_s": 1.56
+    }
+  },
+  {
+    "id": "math_arith",
+    "pass": true,
+    "expected": "395",
+    "got": "395",
+    "resp": {
+      "status": 200,
+      "content": "\n\n395",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 77,
+      "completion_tokens": 139,
+      "latency_s": 2.18
+    }
+  },
+  {
+    "id": "math_prime",
+    "pass": true,
+    "expected": "151",
+    "got": "151",
+    "resp": {
+      "status": 200,
+      "content": "\n\n151",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 76,
+      "completion_tokens": 213,
+      "latency_s": 3.32
+    }
+  },
+  {
+    "id": "inst_three_words",
+    "pass": true,
+    "note": "exactly 3 words",
+    "resp": {
+      "status": 200,
+      "content": "Understood. Thank you.",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 24,
+      "completion_tokens": 7,
+      "latency_s": 0.19
+    }
+  },
+  {
+    "id": "inst_chinese",
+    "pass": true,
+    "note": "contains 巴黎, <=30 chars",
+    "resp": {
+      "status": 200,
+      "content": "巴黎",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 27,
+      "completion_tokens": 2,
+      "latency_s": 0.1
+    }
+  },
+  {
+    "id": "inst_json",
+    "pass": true,
+    "note": "parses as JSON with exact values",
+    "resp": {
+      "status": 200,
+      "content": "{\n  \"a\": 5,\n  \"b\": \"hi\",\n  \"c\": [1, 2, 3]\n}",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": "stop",
+      "prompt_tokens": 56,
+      "completion_tokens": 34,
+      "latency_s": 0.59
+    }
+  },
+  {
+    "id": "needle_depth10",
+    "pass": false,
+    "prompt_tokens": null,
+    "expected": "ZEBRA-4912",
+    "got": "",
+    "resp": {
+      "status": 400,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": null,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "latency_s": 0.02
+    }
+  },
+  {
+    "id": "needle_depth50",
+    "pass": false,
+    "prompt_tokens": null,
+    "expected": "ZEBRA-4912",
+    "got": "",
+    "resp": {
+      "status": 400,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": null,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "latency_s": 0.02
+    }
+  },
+  {
+    "id": "needle_depth90",
+    "pass": false,
+    "prompt_tokens": null,
+    "expected": "ZEBRA-4912",
+    "got": "",
+    "resp": {
+      "status": 400,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [],
+      "finish_reason": null,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "latency_s": 0.02
+    }
+  },
+  {
+    "id": "tool_call",
+    "pass": true,
+    "tool_calls": [
+      {
+        "name": "get_weather",
+        "args": "{\"city\": \"Tokyo\"}"
+      }
+    ],
+    "resp": {
+      "status": 200,
+      "content": "",
+      "reasoning": "",
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "args": "{\"city\": \"Tokyo\"}"
+        }
+      ],
+      "finish_reason": "tool_calls",
+      "prompt_tokens": 283,
+      "completion_tokens": 27,
+      "latency_s": 0.46
+    }
+  }
+]

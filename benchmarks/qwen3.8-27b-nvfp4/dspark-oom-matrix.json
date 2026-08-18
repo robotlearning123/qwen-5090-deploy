@@ -1,0 +1,12 @@
+{"note":"vLLM method=dspark + NVFP4 target on 32GB RTX 5090: every configuration failed at engine init. Raw serve logs retained privately; failure signatures below are quoted from them. Two early runs excluded as contaminated by a prior hung engine (VRAM not released).",
+"configs":[
+ {"id":1,"util":0.90,"mode":"graphs","mbt":8192,"spec":7,"lmo":false,"failure":"CUDA OOM during init: ~2.54 GB speculator allocation"},
+ {"id":2,"util":0.85,"mode":"graphs","mbt":8192,"spec":7,"lmo":false,"failure":"same ~2.54 GB init OOM, then engine hang"},
+ {"id":3,"util":0.90,"mode":"graphs","mbt":4096,"spec":7,"lmo":false,"failure":"same ~2.54 GB init OOM (clean rerun)"},
+ {"id":4,"util":0.88,"mode":"eager","mbt":8192,"spec":7,"lmo":false,"failure":"same ~2.54 GB init OOM"},
+ {"id":5,"util":0.93,"mode":"eager","mbt":2048,"spec":4,"lmo":false,"max_num_seqs":1,"failure":"failed to start (init)"},
+ {"id":6,"util":0.90,"mode":"graphs","mbt":8192,"spec":7,"lmo":true,"ctx":16384,"failure":"silent hang after weight load"},
+ {"id":7,"util":0.90,"mode":"eager","mbt":8192,"spec":7,"lmo":true,"ctx":32768,"failure":"silent hang after weight load"},
+ {"id":8,"util":0.88,"mode":"eager","mbt":8192,"spec":3,"lmo":true,"ctx":98304,"method":"mtp","failure":"runs but 34-42 tok/s < 64 plain (net loss) - see speed json"}],
+"supporting":{"kv_pool_tokens":{"plain_16k_graphs":126390,"mtp_16k":46302,"mtp_lmo_96k_util088":107603,"mtp_lmo_96k_util094":118230,"seqs16_16k":80749},
+"oom_examples":{"mtp_96k_util094_first_real_request":"167 MB alloc failed with 210 MB free","dspeculator_fixed_alloc_bytes":2543845376}}}

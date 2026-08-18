@@ -1,0 +1,91 @@
+{
+  "runtime": "llama.cpp",
+  "ready": true,
+  "requests": 8,
+  "wall_s": 2.037,
+  "completion_tokens": 1024,
+  "tok_s": 502.7000490918017,
+  "errors": [],
+  "per_request": [
+    {
+      "i": 0,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.035,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 1,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.022,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 2,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.022,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 3,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.023,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 4,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.023,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 5,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.023,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 6,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.023,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    },
+    {
+      "i": 7,
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.022,
+      "completion_tokens": 128,
+      "prompt_tokens": 22,
+      "finish_reason": "length",
+      "sample": "\n\n<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Topic:** RTX 5090 local LLM inference tuning\n   - **Format:** Concise numbered engineer"
+    }
+  ]
+}
